@@ -2,7 +2,91 @@
 <head>
 	<title>Write</title>
 </head>
+<style type="text/css">
+body
+	{
+  background-color: #fff;
+  background-image: url(https://d1jcp5e5r52ocf.cloudfront.net/svbtle.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+}
+
+div#form_container {
+position:relative;
+width:600px;
+display:block;
+margin:130px auto 100px;
+}
+
+form#entry input,form#entry textarea {
+width:500px;
+color:#fff;
+background:0;
+border:0;
+font-weight:300;
+resize:none;
+margin:0;
+padding:15px 50px;
+}
+
+form#entry input {
+font-weight:700;
+font-size:25px;
+line-height:35px;
+padding-top:0;
+padding-bottom:5px;
+}
+form#entry textarea.title {
+clear:both;
+display:block;
+padding-top:0;
+padding-bottom:0;
+font-family:freight-sans-pro,sans-serif;
+font-weight:700;
+color:#000;
+-webkit-font-smoothing:antialiased;
+font-size:30px;
+line-height:30px;
+height:40px;
+}
+form#entry textarea.content {
+display:block;
+font-size:15px;
+line-height:25px;
+margin-top:10px;
+margin-bottom:0;
+color:#4d4d4d;
+font-family:proxima-nova,sans-serif;
+-webkit-font-smoothing:aliased;
+font-weight:500;
+padding-bottom:200px;
+padding-top:0;
+transition-property:background-position,background-size;
+transition-duration:.5s;
+transition-timing-function:ease-in-out;
+-webkit-transition-property:background-position,background-size;
+-webkit-transition-duration:.5s;
+-webkit-transition-timing-function:ease-in-out;
+}
+</style>
 <body>
-	<h1>hello, world</h1>
+<form accept-charset="UTF-8" action="/posts/ebloggerz" class="post_form" data-remote="true" id="entry" method="post">
+	<div style="margin:0;padding:0;display:inline">
+	<input name="utf8" type="hidden" value="&#x2713;" />
+	<input name="_method" type="hidden" value="patch" />
+</div>
+    <div id="form_container">
+      <div class="error_explanation errors"><ul id="post_errors_list"></ul></div>
+      <textarea class="title" id="post_title" name="post[title]" placeholder="Title here">
+ebloggerz</textarea>
+      <br>
+      <textarea class="content" id="post_content" name="post[content]" placeholder="Write post here">
+</textarea>
+</div>
+</div>
+</form>
+	
+
 </body>
 </html>
